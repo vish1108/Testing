@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Welcome to Chitchat</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+        <body>
+          <div class="hero">
+            <div class = "form-box">
+                <div class="button-box">
+                  <div id = "btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                <form id = "login" class = "input-group">
+                    <input type="text" class="input-field" placeholder="User id" required>
+                    <input type="text" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                    <button type = "submit" class="submit-btn">Log in</button>
+                </form>
+                <form id = "register" class = "input-group">
+                  <input type="text" class="input-field" placeholder="User id" required>
+                  <input type="text" class="input-field" placeholder="Create your Password" required>
+                  <input type= "number" name="quantity" min="0" max="100" class="input-field" placeholder="Enter your age" required>
+                  <input type="checkbox" class="checkbox"><span>I agree Terms & Conditions</span>
+                  <button type = "submit" class="submit-btn">Register</button>
+              </form>
+
+                </div>
+            </div>
+          </div>  
+        </body>
+        <script>
+          var x = document.getElementById("login")
+          var y = document.getElementById("register")
+          var z = document.getElementById("btn")
+
+          function register(){
+            x.style.left = "-400px";
+            y.style.left = "50px"
+            z.style.left = "1100px"
+
+          }
+
+          function login(){
+            x.style.left = "50px";
+            y.style.left = "450px"
+            z.style.left = "0"
+
+
+
+          }
+
+        </script>
+        <script src="js/Express.js" ></script>
+    </head>
+</html>
+
